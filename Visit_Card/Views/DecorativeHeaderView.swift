@@ -14,17 +14,21 @@ struct DecorativeHeaderView: View {
 
     var body: some View {
         ZStack {
-            // Ellipse décorative avec ombre animée
-            Rectangle()
-                .fill(Color("AccentColor"))
-                .clipShape(Ellipse())
-                .frame(height: 150)
-                .offset(y: -100) // Positionner l'ellipse derrière
-                .shadow(color: .orange.opacity(shadowOpacity), radius: shadowIntensity)
-                .onAppear {
-                    startFlickeringEffect() // Démarrer l'effet néon
-                }
-            
+            HStack {
+                // Rectangle avec coins arrondis
+                        Ellipse()
+                          .fill(Color("AccentColor"))
+                          .frame(height: 150)
+                          .offset(y: -100)
+                       
+                    .shadow(color: .orange.opacity(shadowOpacity), radius: shadowIntensity)
+                    .onAppear {
+                        startFlickeringEffect() // Démarrer l'effet néon
+                    }
+               
+            }
+
+          
             // Photo de profil
             Image("me")
                 .resizable()
@@ -33,6 +37,7 @@ struct DecorativeHeaderView: View {
                 .clipShape(Circle())
                 .overlay(Circle().stroke(Color.purple, lineWidth: 2))
                 .shadow(radius: 10)
+                .padding(.top,10)
         }
     }
 
