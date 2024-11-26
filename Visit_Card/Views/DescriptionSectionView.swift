@@ -3,7 +3,7 @@
 //  Visit_card_Etien
 //
 //  Created by Manomike on 26/11/2024.
-//
+// La partie description : Pour en dire un peu plus
 
 import SwiftUI
 

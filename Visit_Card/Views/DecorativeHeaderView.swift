@@ -3,14 +3,7 @@
 //  Visit_card_Etien
 //
 //  Created by Manomike on 26/11/2024.
-//
-
-//
-//  DecorativeHeader.swift
-//  Visit_card_Final_Etien
-//
-//  Created by Manomike on 26/11/2024.
-//
+// Le header avec une animation néon en panne
 
 import SwiftUI
 
